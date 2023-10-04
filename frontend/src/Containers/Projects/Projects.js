@@ -315,12 +315,12 @@ const Projects = () => {
                 proj.images[0].includes("www.youtube.com") ? (
                   <ReactPlayer url={proj.images[0]} width="390px" height="220px"/>
                 ) : (
-                  <img src={proj.images[0]} alt={proj.title + "img"} className="h-full max-w-sm object-cover object-center border overflow-hidden"/>
+                  <img src={proj.images[0]} alt={proj.title + "img"} style={{ maxHeight: "220px", maxWidth: "400px", objectFit: "cover" }} />
                 )
               }
               </div>
               <div className="flex flex-col gap-1">
-                <img src={"./chips/" + proj.type + ".png"} alt="chip" className="h-6 w-fit" />
+                <img src={"./chips/" + proj.type + ".png"} alt="chip" style={{ height: "24px", maxWidth: "134px" }} />
                 <p className="text-xl font-bold">{proj.title}</p>
                 <p className="text-sm font-bold text-gray-600">{proj.year} | {proj.roles.join(", ")}</p>
                 <p className="text-sm font-bold text-primary">{proj.awards.join(", ")}</p>
