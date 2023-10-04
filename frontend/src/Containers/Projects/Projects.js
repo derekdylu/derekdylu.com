@@ -67,6 +67,10 @@ const projs = [
         type: "website",
         url: "https://taichi2023.taiwanchi.org/",
       },
+      {
+        type: "github",
+        url: "https://github.com/openhci-workshop/taichi-2023",
+      }
     ],
     month: 8
   },
@@ -83,6 +87,10 @@ const projs = [
         type: "website",
         url: "https://www.2023.openhci.com/",
       },
+      {
+        type: "github",
+        url: "https://github.com/openhci-workshop/2023-official-site",
+      }
     ],
     month: 8
   },
