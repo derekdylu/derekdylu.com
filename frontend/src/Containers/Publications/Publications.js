@@ -18,7 +18,7 @@ const pubs = [
 const Publications = () => {
   return (
     <div>
-      <div className="flex flex-col mx-auto pt-6 md:pt-12 px-6 md:px-24 lg:px-36 xl:px-48">
+      <div className="flex flex-col mx-auto pt-4 md:pt-12 px-6 md:px-24 lg:px-36 xl:px-48">
       {
         pubs.map((pub, i) => {
           return (

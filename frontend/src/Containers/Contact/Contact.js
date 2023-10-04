@@ -50,7 +50,7 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <div className="flex flex-col mx-auto md:pt-12 pb-12 px-6 md:px-24 lg:px-36 xl:px-48 gap-16">
+    <div className="flex flex-col mx-auto pt-4 md:pt-12 pb-12 px-6 md:px-24 lg:px-36 xl:px-48 gap-16">
       {
         contacts.map((contact, index) => {
           return (

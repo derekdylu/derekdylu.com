@@ -313,7 +313,7 @@ const Projects = () => {
   }
 
   return (
-    <div>
+    <div className="pt-4">
       <div className="flex flex-row w-full overflow-scroll justify-center gap-2">
         {
           chipsList.map((chip, i) => {
