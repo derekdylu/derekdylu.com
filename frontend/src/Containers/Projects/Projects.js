@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
-import ReactPlayer from 'react-player'
-
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import ReactPlayer from 'react-player';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PublicIcon from '@mui/icons-material/Public';
@@ -256,6 +253,29 @@ const projs = [
   }
 ]
 
+const chipsList = [
+  {
+    initial: "res",
+    full: "Research"
+  },
+  {
+    initial: "dev",
+    full: "Development"
+  },
+  {
+    initial: "ds",
+    full: "Design"
+  },
+  {
+    initial: "mt",
+    full: "Multimedia"
+  },
+  {
+    initial: "bus",
+    full: "Business"
+  },
+]
+
 const Projects = () => {
   const [page, setPage] = useState(0);
 
@@ -294,18 +314,36 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="flex flex-col mx-auto pb-12 px-6 md:px-24 lg:px-36 xl:px-48 gap-4 md:gap-8">
-        <div className="flex flex-row w-full overflow-scroll sm:justify-center">
-          <div className="flex flex-row w-fit gap-1 my-4">
-            <Tabs value={page} onChange={handleChange} textColor="primary" indicatorColor="primary">
-              <Tab label="Research" />
-              <Tab label="Development" />
-              <Tab label="Design" />
-              <Tab label="Multimedia" />
-              <Tab label="Business" />
-            </Tabs>
-          </div>
-        </div>
+      <div className="flex flex-row w-full overflow-scroll justify-center gap-2">
+        {
+          chipsList.map((chip, i) => {
+            return (
+              <div>
+                {
+                  page === i ? (
+                    <div className="flex flex-row h-12 px-4 gap-2 border border-primary rounded-full items-center justify-center"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <img src={"./chips/" + chip.initial + ".png"} alt={chip.initial} style={{ width: "16px", height: "16px" }} />
+                      <div className="text-sm font-bold text-primary">
+                        {chip.full}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex flex-row h-12 px-4 border border-gray-300 hover:bg-gray-200 rounded-full items-center justify-center"
+                      style={{ cursor: "pointer" }}
+                      onClick={(e) => handleChange(e, i)}
+                    >
+                      <img src={"./chips/" + chip.initial + ".png"} alt={chip.initial} style={{ width: "16px", height: "16px" }} />
+                    </div>
+                  )
+                }
+              </div>
+            )
+          })
+        }
+      </div>
+      <div className="flex flex-col mx-auto pt-4 pb-12 px-6 md:px-24 lg:px-36 xl:px-48 gap-4 md:gap-8">
       {
         orderProjs(switchProjs(projs)).map((proj, i) => {
           return (
