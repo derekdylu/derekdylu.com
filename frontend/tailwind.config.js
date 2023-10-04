@@ -6,10 +6,10 @@ module.exports = {
       colors: {
         'primary': '#1a659e',
         'primary-dark': '#004E89',
-        'primary-light': '#00A5E0',
-        'neutral': '#EFEFD0',
+        'primary-light': '#62BFED',
+        'neutral': '#F4E9CD',
         'emphasize': '#FF6B35',
-        'emphasize-light': '#F7C59F',
+        'secondary': '#77ACA2',
       },
     },
   },

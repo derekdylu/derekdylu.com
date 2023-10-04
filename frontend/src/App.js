@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/Footer';
 import Home from './Containers/Home/Home';
 import Contact from './Containers/Contact/Contact';
 import Publications from './Containers/Publications/Publications';
@@ -21,7 +22,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router>      
+      </Router>
+      <Footer />
     </>
   );
 }
