@@ -184,7 +184,7 @@ const projs = [
     title: "IM Night 2021 (I'm in love with) Organizing Team",
     year: "2021",
     roles: ["President of the Team"],
-    abstract: "IM Night, named I'm in love with in 2021, is a student-run event in department of Information Management in National Taiwan University having several performances including dance, drama, and magic show...",
+    abstract: "IM Night, named I'm in love with in 2021, is a student-run event in department of Information Management at National Taiwan University having several performances.",
     awards: [],
     images: ["./projs/proj_IMN.jpg"],
     links: [],
@@ -195,7 +195,7 @@ const projs = [
     title: "Visual Identity of 2021 IM Camp (IMAGE)",
     year: "2021",
     roles: ["Art Director"],
-    abstract: "IM Camp, named IMAGE in 2021, is a student-run camp in department of Information Management in National Taiwan University that aims to help high school students to understand the department and the university.",
+    abstract: "IM Camp, named IMAGE in 2021, is a student-run camp in department of Information Management at National Taiwan University that aims to help high school students to understand the department and the university.",
     awards: [],
     images: ["./projs/proj_IMAGE.jpg"],
     links: [
@@ -348,7 +348,7 @@ const Projects = () => {
         orderProjs(switchProjs(projs)).map((proj, i) => {
           return (
             <div key={i} className="flex flex-col w-full h-fit md:flex-row gap-4 md:gap-12 border px-4 md:px-12 py-4 rounded-3xl">
-              <div className="flex flex-col items-center min-w-full md:min-w-[400px] overflow-hidden">
+              <div className="flex flex-col items-center justify-center min-w-full md:min-w-[400px] overflow-hidden">
               {
                 proj.images[0].includes("www.youtube.com") ? (
                   <ReactPlayer url={proj.images[0]} width="390px" height="220px"/>
