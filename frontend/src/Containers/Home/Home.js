@@ -23,7 +23,7 @@ const Home = () => {
           I am highly passionate about conducting research in the field of Human-Computer Interaction (HCI) with a particular focus on Virtual Reality (VR).
           I also possess expertise in website development and UI design.
           Beyond the tech realm, I showcase a flair for videography, with proficiency in both shooting and editing skills.
-          Finally, as a former member in Creative & Entrepreneurship Program in NTU, I am interested in running projects that foster leadership and crtical thinking skills.
+          Finally, as a former member in Creative & Entrepreneurship Program in NTU, I am interested in running projects that foster leadership and critical thinking skills.
         </div>
         <div className="flex flex-col items-center justify-center w-full h-full">
           <img src="./home/chips.png" alt="chips" className="w-1/3" />
