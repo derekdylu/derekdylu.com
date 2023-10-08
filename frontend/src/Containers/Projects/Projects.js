@@ -10,7 +10,7 @@ const projs = [
     type: "research",
     title: "(Under Anonymous Review)",
     year: "2024",
-    roles: ["Lead Author", "Undergraduate Researcher"],
+    roles: ["Lead Author", "Intern Researcher"],
     abstract: "",
     awards: ["Submitted to CHI '24"],
     images: ["./projs/pending.jpg"],
