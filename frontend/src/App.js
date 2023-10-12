@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -13,6 +14,17 @@ import Error from './Containers/Error/Error';
 function App() {
   return (
     <>
+      <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1R85C4CW0"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R1R85C4CW0');
+          `}
+        </script>
+      </Helmet>
       <NavBar />
       <Router>
         <Routes>
