@@ -2,16 +2,6 @@ import React from 'react'
 
 const pubs = [
   {
-    display: "De-Yuan Lu, [Under Anonymous Review]. 2024. [Under Anonymous Review]. Submitted to the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24).",
-    type: "conference",
-    series: "CHI '24",
-    authors: ["De-Yuan Lu", "Lung-Pan Cheng"],
-    title: "(Under Anonymous Review)",
-    year: "2024",
-    isbn: "",
-    url: "",
-    doi: "",
-    abstract: "",
   }
 ]
 
