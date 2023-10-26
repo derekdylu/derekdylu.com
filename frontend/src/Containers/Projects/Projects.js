@@ -11,7 +11,7 @@ const projs = [
     title: "(Under Anonymous Review)",
     year: "2024",
     roles: ["Lead Author", "Intern Researcher"],
-    abstract: "",
+    abstract: "A novel user interface in VR HMD.",
     awards: ["Submitted to CHI '24"],
     images: ["./projs/pending.jpg"],
     links: [],
