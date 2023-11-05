@@ -40,7 +40,7 @@ const projs = [
     type: "business",
     title: "Green Drive Thru",
     year: "2023",
-    roles: ["Developer", "Video Director & Editor", "Team Member"],
+    roles: ["Developer", "Team Member", "Video Director & Editor"],
     abstract: "Green Drive Thru is a student-run project that aims to provide ESG consulting services for small and midium size firms in Taiwan.",
     awards: [],
     images: ["https://www.youtube.com/watch?v=L0tHcHgfm9g"],

@@ -2,13 +2,12 @@ import React, {} from 'react'
 
 import FlipCard from '../../Components/FlipCard/FlipCard'
 
-const block = [
+const features = [
   {
     title: "Research Experience",
     paragraph: [
       "Intern Researcher at NTU HCI LAB",
-      "Advisor: Lung-Pan Cheng",
-      ""
+      "I had the privilege of joining Professor Lung-Pan Cheng's lab at National Taiwan University as an intern researcher in the summers of 2022 and 2023, as well as serving as an undergraduate researcher during the academic terms. Throughout my time there, I have engaged in the design of a novel virtual reality interface using the Unity engine and conducted a series of user studies. My role expanded to lead author for a paper derived from this research, which we have submitted to CHI'24.",
     ]
   }
 ]
@@ -44,9 +43,9 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center w-full h-full">
           <img src="./home/neutral.jpg" alt="neutral" className="object-cover" />
         </div>
-        <div className="w-full h-full px-3 md:pl-12 lg:pl-18 xl:pl-24 md:leading-loose text-center md:text-left">
+        <div className="w-full h-full px-3 md:pl-12 md:pr-12 lg:pr-18 xl:pr-24 text-center md:text-left">
           {
-            block.map((b, index) => {
+            features.map((b, index) => {
               return (
                 <div className="flex flex-col gap-2">
                   <div className="text-2xl font-bold">
@@ -55,7 +54,7 @@ const Home = () => {
                   {
                     b.paragraph.map((p, i) => {
                       return (
-                        <div className="md:text-xl">
+                        <div className="md:text-xl md:leading-loose">
                           {p}
                         </div>
                       )
