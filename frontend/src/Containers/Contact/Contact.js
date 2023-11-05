@@ -4,11 +4,11 @@ const contacts = [
   {
     section: 'Contact Me!',
     items: [
-      {
-        platform: "Instagram",
-        link: "https://www.instagram.com/derekdylu",
-        description: "",
-      },
+      // {
+      //   platform: "Instagram",
+      //   link: "https://www.instagram.com/derekdylu",
+      //   description: "",
+      // },
       {
         platform: "LinkedIn",
         link: "https://www.linkedin.com/in/derekdylu",
@@ -37,17 +37,17 @@ const contacts = [
       {
         platform: "Youtube",
         link: "https://www.youtube.com/user/derekdylu",
-        description: "My motion works",
+        description: "",
       },
       {
         platform: "Behance",
         link: "https://www.behance.net/derekdylu00ae",
-        description: "My design works",
+        description: "",
       },
       {
         platform: "Instagram",
         link: "https://www.instagram.com/derekdylu_studio",
-        description: "My photography album",
+        description: "",
       },
     ]
   }
@@ -63,24 +63,23 @@ const Contact = () => {
               <div className="text-xl text-primary">
                 {contact.section}
               </div>
-              <div className="flex flex-col md:flex-row gap-8 md:gap-24">
+              <div className="flex flex-col gap-4 md:flex-row md:gap-16">
               {
                 contact.items.map((item, i) => {
                   return (
-                    <div className="flex flex-col gap-2 items-center">
-                      <a href={item.link} target="_blank" rel="noreferrer">
-                        <div className="font-bold hover:underline" style={{ cursor: "pointer" }}>
+                    <a href={item.link} target="_blank" rel="noreferrer">
+                      <div className="flex flex-col gap-2 items-center border hover:border-primary rounded-xl px-8 py-8" style={{ cursor: "pointer" }}>
+                        <div className="font-bold">
                           {item.platform}
                         </div>
-                      </a>
-                      {
-                        item.description &&
-                        <div className="text-sm text-gray-500">
-                          {item.description}
-                        </div>
-                      }
-                    </div>
-                    
+                        {
+                          item.description &&
+                          <div className="text-sm text-gray-500">
+                            {item.description}
+                          </div>
+                        }
+                      </div>
+                    </a>
                   )
                 })
               }

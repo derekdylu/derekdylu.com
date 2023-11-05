@@ -11,9 +11,9 @@ const projs = [
     title: "(Under Anonymous Review)",
     year: "2024",
     roles: ["Lead Author", "Intern Researcher"],
-    abstract: "A novel user interface in VR HMD.",
+    abstract: "Advisor: Lung-Pan Chen. Independently developed a novel interface with Unity engine in VR and conducted several user studies. Analyzed and visualized data with Python.",
     awards: ["Submitted to CHI '24"],
-    images: ["./projs/pending.jpg"],
+    images: ["https://chi2024.acm.org/wp-content/uploads/2023/05/CHI2024_banner_website.svg"],
     links: [],
   },
   {

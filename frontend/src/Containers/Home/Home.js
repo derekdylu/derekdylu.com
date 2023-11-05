@@ -2,6 +2,17 @@ import React, {} from 'react'
 
 import FlipCard from '../../Components/FlipCard/FlipCard'
 
+const block = [
+  {
+    title: "Research Experience",
+    paragraph: [
+      "Intern Researcher at NTU HCI LAB",
+      "Advisor: Lung-Pan Cheng",
+      ""
+    ]
+  }
+]
+
 const Home = () => {
   return (
     <div className="flex flex-col">
@@ -33,8 +44,27 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center w-full h-full">
           <img src="./home/neutral.jpg" alt="neutral" className="object-cover" />
         </div>
-        <div className="w-full h-full px-3 md:pr-12 lg:pr-18 xl:pr-24 md:text-xl md:leading-loose text-center md:text-right">
-          My interests are quite diverse and encompass a wide range of topics, including travel, automobiles, fitness and workouts, cryptocurrency, video games, photography, and the latest advancements in technology.
+        <div className="w-full h-full px-3 md:pl-12 lg:pl-18 xl:pl-24 md:leading-loose text-center md:text-left">
+          {
+            block.map((b, index) => {
+              return (
+                <div className="flex flex-col gap-2">
+                  <div className="text-2xl font-bold">
+                    {b.title}
+                  </div>
+                  {
+                    b.paragraph.map((p, i) => {
+                      return (
+                        <div className="md:text-xl">
+                          {p}
+                        </div>
+                      )
+                    })
+                  }
+                </div>
+              )
+            })
+          }
         </div>
       </div>
       <div className="flex flex-col items-center gap-8 w-full py-12">
