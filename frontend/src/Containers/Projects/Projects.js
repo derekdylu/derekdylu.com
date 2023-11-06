@@ -10,18 +10,18 @@ const projs = [
     type: "research",
     title: "FisheyeVR: Dynamic Zooming User Interface in Virtual Reality",
     year: "2024",
-    roles: ["Lead Author", "Intern Researcher"],
-    abstract: "Advisor: Lung-Pan Cheng. Traditional zooming user interfaces have been used on many computer devices such as personal computers and mobiles for several years. However, there is little research and application of implementing zooming interfaces in virtual reality (VR) devices due to visual distortion. Meanwhile, most affordable VR devices nowadays have a relatively narrow field of view compared to natural human eyes. We propose FisheyeVR, a zooming interface in VR that dynamically provides users a wider field of view using a shorter focal length on the virtual camera, trading in an acceptable visual distortion for more visual context. We conduct studies to (1) find a maximal field of view with an acceptable visual distortion, (2) understand 4 triggering methods using users' activities and (3) evaluate the final FisheyeVR system that integrates finding in the previous studies. Our results show that FisheyeVR reduces users' physical effort and oculomotor simulator sickness without affecting performances in game.",
+    roles: ["Lead Author", "Intern Researcher", "Advisor: Lung-Pan Cheng"],
+    abstract: "Traditional zooming user interfaces have been used on many computer devices such as personal computers and mobiles for several years. However, there is little research and application of implementing zooming interfaces in virtual reality (VR) devices due to visual distortion. Meanwhile, most affordable VR devices nowadays have a relatively narrow field of view compared to natural human eyes. We propose FisheyeVR, a zooming interface in VR that dynamically provides users a wider field of view using a shorter focal length on the virtual camera, trading in an acceptable visual distortion for more visual context. We conduct studies to (1) find a maximal field of view with an acceptable visual distortion, (2) understand 4 triggering methods using users' activities and (3) evaluate the final FisheyeVR system that integrates finding in the previous studies. Our results show that FisheyeVR reduces users' physical effort and oculomotor simulator sickness without affecting performances in game. (Please contact me for more information)",
     awards: ["Submitted to CHI '24"],
-    images: ["./projs/proj_VR.png"],
+    images: ["./projs/proj_VR.jpg"],
     links: [],
   },
   {
     type: "development",
-    title: "花開富貴：找到你靈魂中的稀有植物",
+    title: "花開富貴：找到你靈魂中的稀有植物 (Plant Hunting Game)",
     year: "2023",
     roles: ["Developer", "Project Manager"],
-    abstract: "花開富貴：找到你靈魂中的稀有植物 is an online interactive game that aims to promote a documentary supervised by Li-Chou Yang.",
+    abstract: "花開富貴：找到你靈魂中的稀有植物 (Plant Hunting Game) is an online interactive game that aims to promote a documentary supervised by Li-Chou Yang.",
     awards: [],
     images: ["./projs/proj_PH.jpg"],
     links: [
@@ -93,10 +93,10 @@ const projs = [
   },
   {
     type: "development",
-    title: "純心找茶",
+    title: "純心找茶 (Tea Matching Game)",
     year: "2023",
     roles: ["Developer"],
-    abstract: "純心找茶 is an online interactive game aims to promote Taiwan's tea industry.",
+    abstract: "純心找茶 (Tea Matching Game) is an online interactive game aims to promote Taiwan's tea industry.",
     awards: [],
     images: ["./projs/proj_TEA.jpg"],
     links: [
@@ -113,10 +113,10 @@ const projs = [
   },
   {
     type: "development",
-    title: "ㄟ今晚吃什麼",
+    title: "ㄟ今晚吃什麼 (Cooking Game)",
     year: "2022",
     roles: ["Developer"],
-    abstract: "ㄟ今晚吃什麼 is an online interactive game aims to promote the certificates of Traceable Agricultural Products in Taiwan.",
+    abstract: "ㄟ今晚吃什麼 (Cooking Game) is an online interactive game aims to promote the certificates of Traceable Agricultural Products in Taiwan.",
     awards: [],
     images: ["./projs/proj_TAP.jpg"],
     links: [
@@ -160,7 +160,7 @@ const projs = [
   },
   {
     type: "business",
-    title: "都市主動一次性廢棄物減量方案",
+    title: "都市主動一次性廢棄物減量方案 (Urban Disposable Waste Reduction Plan)",
     year: "2020",
     roles: ["Team Member", "Video Director & Editor"],
     abstract: "",

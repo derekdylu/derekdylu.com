@@ -29,11 +29,11 @@ const contacts = [
         link: "https://github.com/derekdylu",
         description: "",
       },
-      {
-        platform: "Google Scholar",
-        link: "https://scholar.google.com/citations?user=1mKyKC4AAAAJ&hl=en",
-        description: "",
-      },
+      // {
+      //   platform: "Google Scholar",
+      //   link: "https://scholar.google.com/citations?user=1mKyKC4AAAAJ&hl=en",
+      //   description: "",
+      // },
       {
         platform: "Youtube",
         link: "https://www.youtube.com/user/derekdylu",
