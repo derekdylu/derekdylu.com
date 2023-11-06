@@ -8,12 +8,12 @@ import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 const projs = [
   {
     type: "research",
-    title: "A Novel User Interface in VR HMD",
+    title: "FisheyeVR: Dynamic Zooming User Interface in Virtual Reality",
     year: "2024",
     roles: ["Lead Author", "Intern Researcher"],
-    abstract: "Advisor: Lung-Pan Chen. Independently developed a novel user interface with Unity engine in VR and conducted several user studies. Analyzed and visualized data with Python.",
+    abstract: "Advisor: Lung-Pan Cheng. Traditional zooming user interfaces have been used on many computer devices such as personal computers and mobiles for several years. However, there is little research and application of implementing zooming interfaces in virtual reality (VR) devices due to visual distortion. Meanwhile, most affordable VR devices nowadays have a relatively narrow field of view compared to natural human eyes. We propose FisheyeVR, a zooming interface in VR that dynamically provides users a wider field of view using a shorter focal length on the virtual camera, trading in an acceptable visual distortion for more visual context. We conduct studies to (1) find a maximal field of view with an acceptable visual distortion, (2) understand 4 triggering methods using users' activities and (3) evaluate the final FisheyeVR system that integrates finding in the previous studies. Our results show that FisheyeVR reduces users' physical effort and oculomotor simulator sickness without affecting performances in game.",
     awards: ["Submitted to CHI '24"],
-    images: ["https://chi2024.acm.org/wp-content/uploads/2023/05/CHI2024_banner_website.svg"],
+    images: ["./projs/proj_VR.png"],
     links: [],
   },
   {
