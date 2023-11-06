@@ -8,10 +8,10 @@ import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 const projs = [
   {
     type: "research",
-    title: "(Under Anonymous Review)",
+    title: "A Novel User Interface in VR HMD",
     year: "2024",
     roles: ["Lead Author", "Intern Researcher"],
-    abstract: "Advisor: Lung-Pan Chen. Independently developed a novel interface with Unity engine in VR and conducted several user studies. Analyzed and visualized data with Python.",
+    abstract: "Advisor: Lung-Pan Chen. Independently developed a novel user interface with Unity engine in VR and conducted several user studies. Analyzed and visualized data with Python.",
     awards: ["Submitted to CHI '24"],
     images: ["https://chi2024.acm.org/wp-content/uploads/2023/05/CHI2024_banner_website.svg"],
     links: [],

@@ -37,9 +37,9 @@ const NavBar = () => {
               <Link href="/contact" color="#1a659e" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
                 <div className={classnames(styles.navItem, "text-lg font-bold")}>Contact</div>
               </Link>
-              <Link href="/publications" color="#1a659e" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
+              {/* <Link href="/publications" color="#1a659e" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
                 <div className={classnames(styles.navItem, "text-lg font-bold")}>Publications</div>
-              </Link>
+              </Link> */}
               <Link href="/projects" color="#1a659e" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
                 <div className={classnames(styles.navItem, "text-lg font-bold")}>Projects</div>
               </Link>
@@ -63,9 +63,9 @@ const NavBar = () => {
           <Link href="/contact" onClick={() => {setNavActive(false)}} color="#ffffff" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
             <div className="text-2xl font-bold">Contact</div>
           </Link>
-          <Link href="/publications" onClick={() => {setNavActive(false)}} color="#ffffff" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
+          {/* <Link href="/publications" onClick={() => {setNavActive(false)}} color="#ffffff" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
            <div className="text-2xl font-bold">Publications</div>
-          </Link>
+          </Link> */}
           <Link href="/projects" onClick={() => {setNavActive(false)}} color="#ffffff" sx={{ mx: 2 }} style={{ textDecoration: 'none' }}>
            <div className="text-2xl font-bold">Projects</div>
           </Link>
