@@ -36,7 +36,9 @@ const Home = () => {
           Finally, as a former member in Creative & Entrepreneurship Program in NTU, I am interested in running projects that foster leadership and critical thinking skills.
         </div>
         <div className="flex flex-col items-center justify-center w-full h-full">
-          <img src="./home/chips.png" alt="chips" className="w-1/3" />
+          <a href='/projects' rel="noreferrer">
+            <img src="./home/chips.png" alt="chips" className="w-full md:w-2/3" />
+          </a>
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-0 w-full py-8">

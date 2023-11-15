@@ -1,20 +1,36 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
+import classnames from 'classnames';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PublicIcon from '@mui/icons-material/Public';
 import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 
+import styles from './styles.module.scss';
+
 const projs = [
   {
     type: "research",
     title: "FisheyeVR: Dynamic Zooming User Interface in Virtual Reality",
-    year: "2024",
-    roles: ["Lead Author", "Intern Researcher", "Advisor: Lung-Pan Cheng"],
+    year: "2023",
+    roles: ["Lead Author", "Intern Researcher", "Undergraduate Researcher", "Advisor: Prof. Lung-Pan Cheng, CSIE, NTU"],
     abstract: "Traditional zooming user interfaces have been used on many computer devices such as personal computers and mobiles for several years. However, there is little research and application of implementing zooming interfaces in virtual reality (VR) devices due to visual distortion. Meanwhile, most affordable VR devices nowadays have a relatively narrow field of view compared to natural human eyes. We propose FisheyeVR, a zooming interface in VR that dynamically provides users a wider field of view using a shorter focal length on the virtual camera, trading in an acceptable visual distortion for more visual context. We conduct studies to (1) find a maximal field of view with an acceptable visual distortion, (2) understand 4 triggering methods using users' activities and (3) evaluate the final FisheyeVR system that integrates finding in the previous studies. Our results show that FisheyeVR reduces users' physical effort and oculomotor simulator sickness without affecting performances in game. (Please contact me for more information)",
     awards: ["Submitted to CHI '24"],
     images: ["./projs/proj_VR.jpg"],
     links: [],
+  },
+  {
+    type: "research",
+    title: "5ee You: Implementing Big-5 Personality Predictions in HR Management",
+    year: "2022",
+    roles: ["Undergraduate Researcher", "Advisor: Prof. Chih-Ping Wei, IM, NTU"],
+    abstract: "This project employed machine learning techniques for dynamic image analysis during situational conversations, offering an innovative alternative to traditional questionnaire-based methods for predicting Big-5 personality traits. Specifically tailored for job search contexts, this system enables job seekers to objectively assess their interview performance, providing a valuable tool for interview preparation. (Please contact me for more information)",
+    awards: [""],
+    images: ["./projs/proj_SEE.jpg"],
+    links: [{
+      type: "github",
+      url: "https://github.com/derekdylu/Big5-App",
+    }],
   },
   {
     type: "development",
@@ -163,7 +179,7 @@ const projs = [
     title: "都市主動一次性廢棄物減量方案 (Urban Disposable Waste Reduction Plan)",
     year: "2020",
     roles: ["Team Member", "Video Director & Editor"],
-    abstract: "",
+    abstract: "A comprehensive strategy to reduce disposable utensil consumption in Taoyuan, Taiwan.",
     awards: ["Third Prize in the SemiFinal of 2020 ATCC"],
     images: ["https://www.youtube.com/watch?v=XUwKLfbly40"],
     links: [],
@@ -211,7 +227,7 @@ const projs = [
     title: "Visual Identity of IMSA (Student Association of Department of Information Management at National Taiwan University)",
     year: "2020",
     roles: ["Art Director"],
-    abstract: "",
+    abstract: "A visual identity for the Student Association of Department of Information Management at National Taiwan University. The design encapsulates the essence of our department's identity and establishes a revitalized branding image for future endeavors.",
     awards: [],
     images: ["./projs/proj_IMSA.jpg"],
     links: [
@@ -236,7 +252,7 @@ const projs = [
     title: "Schizophrenia",
     year: "2017",
     roles: ["Director", "Editor"],
-    abstract: "",
+    abstract: "The micro movie belongs to the horror genre and portrays the harrowing world experienced by individuals suffering from schizophrenia.",
     awards: [],
     images: ["https://www.youtube.com/watch?v=_VqhbPRblzk"],
     links: [],
@@ -318,7 +334,7 @@ const Projects = () => {
         {
           chipsList.map((chip, i) => {
             return (
-              <div>
+              <div className={classnames(styles.tooltip)}>
                 {
                   page === i ? (
                     <div className="flex flex-row h-12 px-4 gap-2 border border-primary rounded-full items-center justify-center"
@@ -334,6 +350,7 @@ const Projects = () => {
                       style={{ cursor: "pointer" }}
                       onClick={(e) => handleChange(e, i)}
                     >
+                      <span className={classnames(styles.tooltiptext)}>{chip.full}</span>
                       <img src={"./chips/" + chip.initial + ".png"} alt={chip.initial} style={{ width: "16px", height: "16px" }} />
                     </div>
                   )
