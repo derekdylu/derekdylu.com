@@ -75,9 +75,9 @@ const Home = () => {
               Contact Me
             </div>
           </a>
-          <div className="border border-primary hover:bg-primary-dark active:bg-primary-dark px-6 py-2 rounded-xl text-primary hover:text-white active:text-white font-bold" style={{ cursor: "pointer" }} >
+          {/* <div className="border border-primary hover:bg-primary-dark active:bg-primary-dark px-6 py-2 rounded-xl text-primary hover:text-white active:text-white font-bold" style={{ cursor: "pointer" }} >
             Download My CV
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col bg-primary-dark items-center gap-8 w-full py-20 mt-8 text-white text-xl font-bold">
