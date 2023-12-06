@@ -292,8 +292,8 @@ const chipsList = [
   },
 ]
 
-const Projects = () => {
-  const [page, setPage] = useState(0);
+const Projects = (predefinedPage) => {
+  const [page, setPage] = useState(predefinedPage.predefinedPage || 0);
 
   const handleChange = (event, newValue) => {
     setPage(newValue);

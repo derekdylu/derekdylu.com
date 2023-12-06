@@ -28,10 +28,10 @@ function App() {
       <NavBar />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
