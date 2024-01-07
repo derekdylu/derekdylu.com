@@ -53,6 +53,22 @@ const projs = [
     month: 7
   },
   {
+    type: "development",
+    title: "How2split",
+    year: "2024",
+    roles: ["Developer", "Project Manager", "UI Designer"],
+    abstract: "How2split is my side project that aims to provide a simple and easy-to-use tool for splitting bills.",
+    awards: [],
+    images: ["./projs/proj_HS.jpg"],
+    links: [
+      {
+        type: "website",
+        url: "https://how2split.derekdylu.com/",
+      },
+    ],
+    month: 1
+  },
+  {
     type: "business",
     title: "Green Drive Thru",
     year: "2023",
