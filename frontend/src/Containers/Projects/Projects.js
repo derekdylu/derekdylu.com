@@ -63,7 +63,7 @@ const projs = [
     links: [
       {
         type: "website",
-        url: "https://how2split.derekdylu.com/",
+        url: "https://how2split.online/",
       },
     ],
     month: 1
